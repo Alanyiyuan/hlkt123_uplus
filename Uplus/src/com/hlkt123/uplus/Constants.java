@@ -24,6 +24,6 @@ public class Constants {
 	/**
 	 * app意外崩溃接受错误日志的邮箱地址
 	 */
-	public final static String EXCEPTION_EXIT_EMAILTO_ADDR = "liuyiyuan@hlkt123.com";
+	public final static String EXCEPTION_EXIT_EMAILTO_ADDR = "liuyiyuan@hlkt123.com ";
 
 }
