@@ -54,9 +54,6 @@ public class CrashHandler implements UncaughtExceptionHandler {
 	// 用来存储设备信息和异常信息
 	private Map<String, String> infos = new HashMap<String, String>();
 
-	// 用于格式化日期,作为日志文件名的一部分
-	private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-
 	/** 保证只有一个CrashHandler实例 */
 	private CrashHandler() {
 	}
@@ -313,8 +310,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 					/**
 					 * 这个地方需要改成自己的邮箱
 					 */
-					fromAddress = new InternetAddress(
-							"liuyiyuan@hlkt123.com");
+					fromAddress = new InternetAddress("liuyiyuan@hlkt123.com");
 					toAddress = new InternetAddress(
 							Constants.EXCEPTION_EXIT_EMAILTO_ADDR);
 
