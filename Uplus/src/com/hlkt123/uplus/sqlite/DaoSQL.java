@@ -8,7 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteCursor;
 
 import com.hlkt123.uplus.model.CitySpinnerBean;
-import com.hlkt123.uplus.model.MemoInputBean;
+import com.hlkt123.uplus.model.InputModel;
 
 public class DaoSQL {
 	public String DATABASE_NAME = ""; // 定义数据库名称
@@ -236,7 +236,7 @@ public class DaoSQL {
 	 * @param keywords
 	 * @return
 	 */
-	public ArrayList<MemoInputBean> getMemoList(Context mCnt, int type,
+	public ArrayList<InputModel> getMemoList(Context mCnt, int type,
 			String keywords) {
 		dbManage = new DatabaseManage(mCnt, DATABASE_NAME, DATABASE_VERSION);
 
@@ -247,9 +247,9 @@ public class DaoSQL {
 				+ " order by createTime desc limit 0,10 ";
 		Cursor c = dbManage.SqlGet(sqlStr);
 		if (c != null && c.moveToFirst()) {
-			ArrayList<MemoInputBean> list = new ArrayList<MemoInputBean>();
+			ArrayList<InputModel> list = new ArrayList<InputModel>();
 			while (!c.isAfterLast()) {
-				MemoInputBean mib = new MemoInputBean(type, c.getString(2));
+				InputModel mib = new InputModel(type, c.getString(2));
 				mib.set_id(c.getInt(0));
 				list.add(mib);
 				c.moveToNext();
@@ -271,7 +271,7 @@ public class DaoSQL {
 	 * @param mib
 	 * @return
 	 */
-	public boolean existContent(DatabaseManage dbManage, MemoInputBean mib) {
+	public boolean existContent(DatabaseManage dbManage, InputModel mib) {
 		sqlStr = " select content from t_memo_input where content='"
 				+ mib.getContent() + "' and type=" + mib.getType();
 		Cursor c = dbManage.SqlGet(sqlStr);
