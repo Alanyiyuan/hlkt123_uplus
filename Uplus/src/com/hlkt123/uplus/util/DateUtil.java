@@ -31,7 +31,7 @@ public class DateUtil {
 		rightNow.add(Calendar.DAY_OF_YEAR, days);
 		Date d2 = rightNow.getTime();
 		String retStr = sdf.format(d2);
-		LogUplus.upLog_i("DateUtil",retStr);
+		LogUtil.upLog_i("DateUtil",retStr);
 		return retStr;
 	}
 
@@ -48,7 +48,7 @@ public class DateUtil {
 		rightNow.add(Calendar.DAY_OF_YEAR, days);
 		Date d2 = rightNow.getTime();
 		String retStr = sdf.format(d2);
-		LogUplus.upLog_i("DateUtil",retStr);
+		LogUtil.upLog_i("DateUtil",retStr);
 		return retStr;
 	}
 	
@@ -65,7 +65,7 @@ public class DateUtil {
 		rightNow.add(Calendar.DAY_OF_YEAR, days);
 		Date d2 = rightNow.getTime();
 		String retStr = sdf2.format(d2);
-		LogUplus.upLog_i("DateUtil",retStr);
+		LogUtil.upLog_i("DateUtil",retStr);
 		return retStr;
 	}
 

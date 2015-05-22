@@ -134,7 +134,7 @@ public class HttpUtil {
 			postMethod.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 			HttpResponse response = client.execute(postMethod);
 			int statueCode = response.getStatusLine().getStatusCode();
-			LogUplus.upLog_i("statueCode",statueCode+"");
+			LogUtil.upLog_i("statueCode",statueCode+"");
 			if (statueCode == 200) {
 				return EntityUtils.toString(response.getEntity());
 			}

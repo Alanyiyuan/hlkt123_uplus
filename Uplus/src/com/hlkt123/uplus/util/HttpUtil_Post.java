@@ -19,7 +19,7 @@ import android.util.Log;
  * @Fun http 请求的帮助类
  * 
  */
-public class HttpUtil_push {
+public class HttpUtil_Post {
 
 	private String urlStr;
 	private String charSet;
@@ -32,7 +32,7 @@ public class HttpUtil_push {
 	 * @param _charSet
 	 *            请求和响应编码格式
 	 */
-	public HttpUtil_push(String _url, String _charSet) {
+	public HttpUtil_Post(String _url, String _charSet) {
 		this.urlStr = _url;
 		this.charSet = _charSet;
 	}

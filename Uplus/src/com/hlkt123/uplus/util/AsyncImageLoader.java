@@ -74,7 +74,7 @@ public class AsyncImageLoader {
 		File file = new File(path);
 
 		if (file.exists() && file.length() > 0) {
-			LogUplus.upLog_i("loadImageFromUrl:", "file.exists()" + file.getAbsolutePath());
+			LogUtil.upLog_i("loadImageFromUrl:", "file.exists()" + file.getAbsolutePath());
 			try{
 				return Drawable.createFromPath(file.getAbsolutePath());
 			}catch(OutOfMemoryError e){
@@ -110,7 +110,7 @@ public class AsyncImageLoader {
 			e.printStackTrace();
 			if (file.exists()) {
 				file.delete();
-				LogUplus.upLog_i("loadImageFromUrl", "下载出错，删除空文件");
+				LogUtil.upLog_i("loadImageFromUrl", "下载出错，删除空文件");
 			}
 		}
 		catch(OutOfMemoryError e){

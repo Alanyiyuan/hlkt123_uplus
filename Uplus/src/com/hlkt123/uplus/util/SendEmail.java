@@ -69,7 +69,7 @@ public class SendEmail {
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
-			LogUplus.upLog_i("Exception_sendEmail", "发送出错");
+			LogUtil.upLog_i("Exception_sendEmail", "发送出错");
 			return false;
 		}
 	}

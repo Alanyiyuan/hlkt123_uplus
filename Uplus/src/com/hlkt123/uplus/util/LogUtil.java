@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.hlkt123.uplus.Constants;
 
-public class LogUplus {
+public class LogUtil {
 
 	/**
 	 * 输出接口请求或者返回参数标准日志

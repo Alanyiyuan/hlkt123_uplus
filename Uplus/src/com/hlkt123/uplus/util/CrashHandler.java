@@ -148,7 +148,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 			try {
 				field.setAccessible(true);
 				infos.put(field.getName(), field.get(null).toString());
-				LogUplus.upLog_d(TAG, field.getName() + " : " + field.get(null));
+				LogUtil.upLog_d(TAG, field.getName() + " : " + field.get(null));
 			} catch (Exception e) {
 				Log.e(TAG, "an error occured when collect crash info", e);
 			}
@@ -346,7 +346,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 
 				} catch (Exception e) {
 					e.printStackTrace();
-					LogUplus.upLog_i("Exception_sendEmail", "发送出错,准备写入本地错误日志");
+					LogUtil.upLog_i("Exception_sendEmail", "发送出错,准备写入本地错误日志");
 					writerText(Constants.LOG_PATH, content, "errLog.txt");
 
 				}
