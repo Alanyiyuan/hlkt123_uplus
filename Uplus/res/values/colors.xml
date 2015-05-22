@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 声明版本号以及编码方式 -->
+<resources>
+
+    <!-- 主背景颜色 -->
+    <color name="main_bg">#E6E6E6</color>
+
+    <!-- app文字颜色加深的 深橙色 -->
+    <color name="orange_txt">#F14915</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+
+    <!-- 象牙色 -->
+    <color name="ivory">#FFFFF0</color>
+    <!-- 亮黄色 -->
+    <color name="lightyellow">#FFFFE0</color>
+    <!-- 黄色 -->
+    <color name="yellow">#FFFF00</color>
+    <!-- 雪白色 -->
+    <color name="snow">#FFFAFA</color>
+    <!-- 花白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 米绸色 -->
+    <color name="cornsilk">#FFF8DC</color>
+
+    <!-- 白杏色 -->
+    <color name="blanchedalmond">#FFEBCD</color>
+    <!-- 浅玫瑰色 -->
+    <color name="mistyrose">#FFE4E1</color>
+    <!-- 桔黄色 -->
+    <color name="bisque">#FFE4C4</color>
+    <!-- 桃色 -->
+    <color name="peachpuff">#FFDAB9</color>
+    <!-- 金色 -->
+    <color name="gold">#FFD700</color>
+
+    <!-- 橙色 -->
+    <color name="orange">#FFA500</color>
+
+    <!-- 暗桔黄色 -->
+    <color name="darkorange">#FF8C00</color>
+
+    <!-- 红橙色 -->
+    <color name="orangered">#FF4500</color>
+
+    <!-- 亮金黄色 -->
+    <color name="lightgoldenrodyellow">#FAFAD2</color>
+
+    <!-- 鲜肉色 -->
+    <color name="salmon">#FA8072</color>
+
+    <!-- 薄荷色 -->
+    <color name="mintcream">#F5FFFA</color>
+    <!-- 米色 -->
+    <color name="beige">#F5F5DC</color>
+    <!-- 紫罗兰色 -->
+    <color name="violet">#EE82EE</color>
+    <!-- 暗肉色 -->
+    <color name="darksalmon">#E9967A</color>
+    <!-- 亮灰色 -->
+    <color name="lightgray">#D3D3D3</color>
+
+    <!-- 银色 -->
+    <color name="silver">#C0C0C0</color>
+    <!-- 亮天蓝色 -->
+    <color name="lightskyblue">#87CEFA</color>
+    <!-- 天蓝色 -->
+    <color name="skyblue">#87CEEB</color>
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 绿色 -->
+    <color name="green">#008000</color>
+
+    <!-- 蓝色 -->
+    <color name="blue">#0000FF</color>
+
+    <!-- 暗蓝色 -->
+    <color name="darkblue">#00008B</color>
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 草绿色 -->
+    <color name="grassgreen">#99cc33</color>
+    <!-- 灰色cc -->
+    <color name="gray_cc">#cccccc</color>
+    <!-- 灰色8f -->
+    <color name="gray_8f">#8f8f8f</color>
+
+</resources>
