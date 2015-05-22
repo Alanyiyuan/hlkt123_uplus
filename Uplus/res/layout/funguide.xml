@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <com.hlkt123.uplus.view.FunGudeGallery
+        android:id="@+id/image_wall_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:unselectedAlpha="1"
+        android:fadingEdge="none"
+		/>
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:id="@+id/gallery_point_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+         >
+    </LinearLayout>
+    
+</RelativeLayout>
