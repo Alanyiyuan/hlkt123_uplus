@@ -16,6 +16,7 @@
         android:onClick="back" />
 
     <TextView
+        android:id="@+id/titleTV"
         style="@style/white_center_normal_row1_18"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
