@@ -6,6 +6,7 @@ import com.hlkt123.uplus.adapter.IndexViewPageAdp;
 import com.hlkt123.uplus.listener.IndexViewPageChangeListener;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -99,6 +100,14 @@ public class MainActivity extends Activity {
 			indexVP.setCurrentItem(index);
 		}
 
+	}
+	
+	//查看老师列表
+	public void selectTeacher(View view)
+	{
+		Intent i=new Intent();
+		i.setClass(this,TeacherList.class);
+		startActivity(i);
 	}
 
 }

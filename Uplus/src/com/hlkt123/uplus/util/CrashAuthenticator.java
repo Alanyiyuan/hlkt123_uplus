@@ -9,8 +9,8 @@ public class CrashAuthenticator extends Authenticator
     public PasswordAuthentication getPasswordAuthentication()  
     {  
    
-        String username = "crash_info_tank@wazert.com"; 
-        String pwd = "wazert123456";  
+        String username = "liuyiyuan@hlkt123.com"; 
+        String pwd = "Dkalan@5188";  
         return new PasswordAuthentication(username,pwd);  
     }  
 }  

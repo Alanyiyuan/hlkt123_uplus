@@ -3,7 +3,7 @@
 <resources>
 
     <!-- 主背景颜色 -->
-    <color name="main_bg">#FFFFFF</color>
+    <color name="main_bg">#E6E6E6</color>
 
     <!-- app文字颜色加深的 深橙色 -->
     <color name="orange_txt">#F14915</color>

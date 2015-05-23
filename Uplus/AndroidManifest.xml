@@ -51,6 +51,11 @@
             android:value="360_anzhi_anzhuo" />
 
         <!-- 友盟 统计key end -->
+        
+        <activity
+            android:name=".TeacherList"
+            android:screenOrientation="portrait" >
+        </activity>
 
     </application>
 

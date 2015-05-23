@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-     >
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
 
     <include
         android:id="@+id/headerIn"
@@ -11,11 +11,13 @@
         android:layout_height="50dp"
         layout="@layout/include_header_index" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="selectTeacher"
-        android:text="选老师" />
-	
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null" >
+    </ListView>
+
 </LinearLayout>
