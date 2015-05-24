@@ -11,6 +11,101 @@
         android:layout_height="50dp"
         layout="@layout/include_header_index" />
 
+    <!-- 查询条件图层 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/header_down_gray_line_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/conditionLL1"
+            android:layout_width="0dip"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/conditionTV1"
+                style="@style/black_center_normal_row1_16"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="附近" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/conditionLL2"
+            android:layout_width="0dip"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/conditionTV2"
+                style="@style/black_center_normal_row1_16"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="综合排序" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="32dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/conditionLL3"
+            android:layout_width="0dip"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/conditionTV3"
+                style="@style/black_center_normal_row1_16"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="筛选" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 查询条件图层 end -->
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="fill_parent"

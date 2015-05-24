@@ -4,16 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.hlkt123.uplus.adapter.TeachListAdp;
+import com.hlkt123.uplus.model.CitySpinnerBean;
 import com.hlkt123.uplus.model.TeacherBean;
 import com.hlkt123.uplus.util.ToastUtil;
+import com.hlkt123.uplus.view.PopQuery_TeacherList;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AbsListView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupWindow;
+import android.widget.PopupWindow.OnDismissListener;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.AbsListView.OnScrollListener;
@@ -39,6 +45,12 @@ public class TeacherList extends BaseActivity {
 	private boolean isLoading = false; // 是否正在加载数据,默认false
 
 	private UplusHandler mHandler = null;
+	
+	private LinearLayout conditionLL1,conditionLL2,conditionLL3; //查询条件视图
+	private TextView conditionTV1,conditionTV2,conditionTV3; //查询条件TV
+	
+	private PopQuery_TeacherList winTool=null;//弹出窗口工具类
+	private PopupWindow queryWin=null;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -47,8 +59,44 @@ public class TeacherList extends BaseActivity {
 		initFooter();
 		initHandler();
 		mHandler.sendEmptyMessage(Constants.MSG_WHAT_GET_P1_SUCC);
+		
+		initPopWin();
+		setLis();
 	}
-
+	
+	/**
+	 * 初始化查询条件弹出窗口
+	 */
+	private void initPopWin()
+	{
+		List<CitySpinnerBean> list=new ArrayList<CitySpinnerBean>();
+		list.add(new CitySpinnerBean("01","离家近"));
+		list.add(new CitySpinnerBean("02","离学校近"));
+		winTool=new PopQuery_TeacherList(this,list);
+		queryWin=winTool.getPopWin();
+		
+		queryWin.setOnDismissListener(new OnDismissListener() {
+			
+			@Override
+			public void onDismiss() {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+	}
+	
+	private void setLis(){
+		conditionLL1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				winTool.showAsDropDown(v);
+			}
+		});
+		
+	}
+	
 	/**
 	 * 初始化handler
 	 */
@@ -128,6 +176,14 @@ public class TeacherList extends BaseActivity {
 	
 	private void findView() {
 		listView = (ListView) findViewById(R.id.listView);
+		
+		conditionLL1=(LinearLayout)findViewById(R.id.conditionLL1);
+		conditionLL2=(LinearLayout)findViewById(R.id.conditionLL2);
+		conditionLL3=(LinearLayout)findViewById(R.id.conditionLL3);
+		
+		conditionTV1=(TextView)findViewById(R.id.conditionTV1);
+		conditionTV2=(TextView)findViewById(R.id.conditionTV2);
+		conditionTV3=(TextView)findViewById(R.id.conditionTV3);
 	}
 
 	// 初始化页脚
