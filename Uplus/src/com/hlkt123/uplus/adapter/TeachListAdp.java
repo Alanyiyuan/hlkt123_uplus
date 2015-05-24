@@ -86,7 +86,7 @@ public class TeachListAdp extends BaseAdapter {
 				+ list.get(position).getRemarkPercent());
 		holder.lvStr.setText(list.get(position).getUserLvStr());
 		holder.dis.setText("<" + list.get(position).getDis() + "km");
-		holder.studyCount.setText(list.get(position).getStudyCount()+"");
+		holder.studyCount.setText(list.get(position).getStudyCount() + "");
 		holder.feature1.setText(list.get(position).getFeature1());
 		holder.feature2.setText(list.get(position).getFeature2());
 		holder.fee.setText(list.get(position).getFee() + "");
@@ -103,5 +103,19 @@ public class TeachListAdp extends BaseAdapter {
 		private TextView name, remarkPercent, lvStr, dis, studyCount, feature1,
 				feature2, fee;
 
+	}
+
+	/**
+	 * 批量添加数据
+	 * @param _more
+	 * @return
+	 */
+	public boolean addItems(List<TeacherBean> _more) {
+		if (_more == null || _more.size() == 0) {
+			return false;
+		} else {
+			list.addAll(_more);
+			return true;
+		}
 	}
 }

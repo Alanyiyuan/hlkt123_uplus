@@ -35,13 +35,9 @@ public abstract class UplusHandler extends Handler {
 	 * @param remindKey
 	 *            main action keywords,like "订单"，“车源”等
 	 */
-	public UplusHandler(Context _mCnt, ProgressDialog _dig, String _remindKey) {
+	public UplusHandler(Context _mCnt, ProgressDialog _dig) {
 		mCnt = _mCnt;
 		dig = _dig;
-		remindKey = _remindKey;
-		if (remindKey == null) {
-			remindKey = "";
-		}
 	}
 
 	/**
