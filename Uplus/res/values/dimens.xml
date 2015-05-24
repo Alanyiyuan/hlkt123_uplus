@@ -4,4 +4,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="pop_win_teacherlist_off_y">5.0dip</dimen>
+    <dimen name="pop_win_teacherlist_width">120dp</dimen>
 </resources>
