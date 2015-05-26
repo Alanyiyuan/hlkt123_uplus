@@ -59,5 +59,7 @@ public class Constants {
 			MSG_WHAT_EXCEPTION = 4007,
 			MSG_WHAT_NET_ERR= 4008,
 			MSG_WHAT_OTHERS = 4099;
+	
+	//add by
 
 }
