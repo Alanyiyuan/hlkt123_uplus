@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/include_header_findback_psw" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="#EFEFF4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shapeitem"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:src="@drawable/et_account" />
+
+            <EditText
+                android:id="@+id/findbackPsw_account_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="19"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="@string/username_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#C9CACA"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="14"
+                android:background="@drawable/shapeitem"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:src="@drawable/et_auth" />
+
+                <EditText
+                    android:id="@+id/findbackPsw_verifycode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/verifycode_hint"
+                    android:textColor="#C9CACA"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/findbackPsw_get_verifycode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="9"
+                android:background="@drawable/btn_auth"
+                android:gravity="center"
+                android:text="@string/getverifycode"
+                android:textColor="#C9CACA"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shapeitem"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+				android:src="@drawable/et_psw" />
+
+            <EditText
+                android:id="@+id/findbackPsw_psw_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="16"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:hint="@string/findback_password_hint"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="#C9CACA"
+                android:textSize="17sp" />
+            
+            <ImageView
+                    android:id="@+id/see_forbidden_img"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:src="@drawable/et_see_forbidden" />
+        </LinearLayout>
+        
+        <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/wide_red_btn"
+        android:text="@string/confirm"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
