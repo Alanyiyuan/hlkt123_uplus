@@ -6,4 +6,25 @@
     <string name="hello_world">Hello world!</string>
     <string name="copyright">Copyright ©2004-2015 huoliclass Corporation.All Rights Reserved</string>
 
+    <string name="username">账号</string>
+    <string name="register">注 册</string>
+    <string name="login">登录</string>
+    <string name="password">密码</string>
+    <string name="password_findback">忘记密码</string>
+    <string name="username_none">立即注册</string>
+    <string name="verifycode">验证码</string>
+    <string name="getverifycode">获取验证码</string>
+    <string name="invitationcode">邀请码</string>
+    <string name="username_hint">请输入手机号</string>
+    <string name="verifycode_hint">请输入验证码</string>
+    <string name="password_hint">请输入6至16位密码</string>
+    <string name="invitationcode_hint">请输入邀请码</string>
+    <string name="txt_getMsgCode_validate">重新获取</string>
+    <string name="checkbox_string">我已经阅读并遵守"U+"的协议</string>
+    <string name="readme_tv1">我已经阅读并遵守</string>
+    <string name="readme_tv2">《“一搜名师”服务协议》</string>
+    <string name="username_hint_login">请输入您的手机账号</string>
+    <string name="password_hint_login">请输入您的密码</string>
+    <string name="findback_password_hint">请输入新密码</string>
+    <string name="confirm">确定</string>
 </resources>
