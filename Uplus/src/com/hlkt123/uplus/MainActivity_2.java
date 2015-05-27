@@ -12,6 +12,7 @@ public class MainActivity_2 extends Activity implements OnClickListener {
 
 	private Button register_btn;
 	private Button login_btn;
+	private Button order;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +21,11 @@ public class MainActivity_2 extends Activity implements OnClickListener {
         
         register_btn = (Button) findViewById(R.id.register);
         login_btn = (Button)findViewById(R.id.login);
+        order = (Button) findViewById(R.id.order);
         
         register_btn.setOnClickListener(this);
         login_btn.setOnClickListener(this);
+        order.setOnClickListener(this);
     }
 
 
@@ -47,6 +50,10 @@ public class MainActivity_2 extends Activity implements OnClickListener {
 			Intent intent2 = new Intent(MainActivity_2.this, LoginActivity.class);
 			intent2.putExtra("LOGINTYPE", LoginActivity.LOGIN_MAIN);
 			startActivity(intent2);
+			break;
+		case R.id.order:
+			Intent intent3 = new Intent(MainActivity_2.this, OrderActivity.class);
+			startActivity(intent3);
 			break;
 		default:
 			break;

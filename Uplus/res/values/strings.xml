@@ -26,4 +26,5 @@
     <string name="password_hint_login">请输入您的密码</string>
     <string name="findback_password_hint">请输入新密码</string>
     <string name="confirm">确定</string>
+    <string name="order">订单</string>
 </resources>
