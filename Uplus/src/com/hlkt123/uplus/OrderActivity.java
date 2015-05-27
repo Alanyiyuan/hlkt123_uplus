@@ -10,6 +10,5 @@ public class OrderActivity extends BaseActivity{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.order_activity);
-		//add by lyy 05-27
 	}
 }
