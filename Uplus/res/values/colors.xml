@@ -89,5 +89,8 @@
     <color name="gray_cc">#cccccc</color>
     <!-- 灰色8f -->
     <color name="gray_8f">#8f8f8f</color>
-
+    <!-- 黑色3d -->
+    <color name="black_3d">#3D4245</color>
+    <!-- 灰色77 -->
+    <color name="gray_77">#77777A</color>
 </resources>

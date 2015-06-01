@@ -7,18 +7,20 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal" >
 
             <ImageView
                 android:id="@+id/order_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/temp_icon" />
 
             <LinearLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
@@ -27,19 +29,27 @@
                     android:id="@+id/order_tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/black_3d"
                     android:text="aaaaaaaaaa"
                     android:textStyle="bold" />
 
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:id="@+id/order_tv_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/gray"
                     android:text="bbbbbbbbbbbbbb" />
 
                 <TextView
+                    android:layout_marginTop="10dp"
                     android:id="@+id/order_tv_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/gray"
                     android:text="cccccccccccc" />
             </LinearLayout>
         </LinearLayout>
@@ -51,16 +61,25 @@
             layout="@layout/include_line_item" />
 
         <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="13dp"
             android:id="@+id/order_tv_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/gray"
             android:layout_gravity="right"
             android:text="dddddddddddddddddddddddddddddddd" />
 
         <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="10dp"
             android:id="@+id/order_tv_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="@color/gray"
             android:layout_gravity="right"
             android:text="x40课时" />
 
@@ -73,33 +92,40 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="3dp" >
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="优惠券" />
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:text="@string/order_reduce" />
 
             <TextView
                 android:id="@+id/order_tv_reduce"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
                 android:text="eeeeee" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="3dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="3dp" >
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+           	android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
                 android:text="实付款" />
 
             <TextView
@@ -108,7 +134,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="fffffffffffffff"
-                android:textSize="20sp"
+                android:textSize="16sp"
+                android:textColor="@color/black_3d"
                 android:textStyle="bold" />
         </RelativeLayout>
         

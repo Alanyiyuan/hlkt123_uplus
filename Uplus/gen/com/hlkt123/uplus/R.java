@@ -20,6 +20,9 @@ public final class R {
         /**  黑色 
          */
         public static final int black=0x7f050021;
+        /**  黑色3d 
+         */
+        public static final int black_3d=0x7f050025;
         /**  白杏色 
          */
         public static final int blanchedalmond=0x7f05000b;
@@ -50,6 +53,9 @@ public final class R {
         /**  灰色 
          */
         public static final int gray=0x7f05001d;
+        /**  灰色77 
+         */
+        public static final int gray_77=0x7f050026;
         /**  灰色8f 
          */
         public static final int gray_8f=0x7f050024;
@@ -136,44 +142,49 @@ public final class R {
         public static final int pop_win_teacherlist_width=0x7f060003;
     }
     public static final class drawable {
-        public static final int backarrow=0x7f020000;
-        public static final int bg_content_cirle_corner=0x7f020001;
-        public static final int bg_content_straight_corner=0x7f020002;
-        public static final int bg_pop_win=0x7f020003;
-        public static final int btn_auth=0x7f020004;
-        public static final int btn_back_normal=0x7f020005;
-        public static final int btn_back_pressed=0x7f020006;
-        public static final int btn_back_style=0x7f020007;
-        public static final int btn_save_normal=0x7f020008;
-        public static final int check_round=0x7f020009;
-        public static final int et_account=0x7f02000a;
-        public static final int et_auth=0x7f02000b;
-        public static final int et_invi=0x7f02000c;
-        public static final int et_psw=0x7f02000d;
-        public static final int et_see=0x7f02000e;
-        public static final int et_see_forbidden=0x7f02000f;
-        public static final int fun1=0x7f020010;
-        public static final int fun4=0x7f020011;
-        public static final int header_down_gray_line_bg=0x7f020012;
-        public static final int ic_arrow_down=0x7f020013;
-        public static final int ic_index_tab0_normal=0x7f020014;
-        public static final int ic_index_tab0_pressed=0x7f020015;
-        public static final int ic_launcher=0x7f020016;
-        public static final int ic_user_lv0=0x7f020017;
-        public static final int ic_user_lv1=0x7f020018;
-        public static final int img_def=0x7f020019;
-        public static final int input=0x7f02001a;
-        public static final int input2=0x7f02001b;
-        public static final int p_off=0x7f02001c;
-        public static final int p_on=0x7f02001d;
-        public static final int shapeitem=0x7f02001e;
-        public static final int tab_select_on=0x7f02001f;
-        public static final int teacher_query_item_style=0x7f020020;
-        public static final int temp_arrow=0x7f020021;
-        public static final int temp_forpay=0x7f020022;
-        public static final int temp_icon=0x7f020023;
-        public static final int welcome=0x7f020024;
-        public static final int wide_red_btn=0x7f020025;
+        public static final int arrow=0x7f020000;
+        public static final int backarrow=0x7f020001;
+        public static final int bg_content_cirle_corner=0x7f020002;
+        public static final int bg_content_straight_corner=0x7f020003;
+        public static final int bg_pop_win=0x7f020004;
+        public static final int btn_auth=0x7f020005;
+        public static final int btn_back_normal=0x7f020006;
+        public static final int btn_back_pressed=0x7f020007;
+        public static final int btn_back_style=0x7f020008;
+        public static final int btn_order_normal=0x7f020009;
+        public static final int btn_order_pressed=0x7f02000a;
+        public static final int btn_pay_style=0x7f02000b;
+        public static final int btn_save_normal=0x7f02000c;
+        public static final int check_round=0x7f02000d;
+        public static final int et_account=0x7f02000e;
+        public static final int et_auth=0x7f02000f;
+        public static final int et_invi=0x7f020010;
+        public static final int et_psw=0x7f020011;
+        public static final int et_see=0x7f020012;
+        public static final int et_see_forbidden=0x7f020013;
+        public static final int fun1=0x7f020014;
+        public static final int fun4=0x7f020015;
+        public static final int header_down_gray_line_bg=0x7f020016;
+        public static final int ic_arrow_down=0x7f020017;
+        public static final int ic_index_tab0_normal=0x7f020018;
+        public static final int ic_index_tab0_pressed=0x7f020019;
+        public static final int ic_launcher=0x7f02001a;
+        public static final int ic_user_lv0=0x7f02001b;
+        public static final int ic_user_lv1=0x7f02001c;
+        public static final int img_def=0x7f02001d;
+        public static final int input=0x7f02001e;
+        public static final int input2=0x7f02001f;
+        public static final int order_pay=0x7f020020;
+        public static final int p_off=0x7f020021;
+        public static final int p_on=0x7f020022;
+        public static final int shapeitem=0x7f020023;
+        public static final int tab_select_on=0x7f020024;
+        public static final int teacher_query_item_style=0x7f020025;
+        public static final int temp_arrow=0x7f020026;
+        public static final int temp_forpay=0x7f020027;
+        public static final int temp_icon=0x7f020028;
+        public static final int welcome=0x7f020029;
+        public static final int wide_red_btn=0x7f02002a;
     }
     public static final class id {
         public static final int action_settings=0x7f0a0062;
@@ -327,6 +338,11 @@ public final class R {
         public static final int invitationcode_hint=0x7f070010;
         public static final int login=0x7f070006;
         public static final int order=0x7f070019;
+        public static final int order_cancel=0x7f07001e;
+        public static final int order_pay=0x7f07001f;
+        public static final int order_pay_num=0x7f07001c;
+        public static final int order_pay_wait=0x7f07001b;
+        public static final int order_reduce=0x7f07001d;
         public static final int password=0x7f070007;
         public static final int password_findback=0x7f070008;
         public static final int password_hint=0x7f07000f;
