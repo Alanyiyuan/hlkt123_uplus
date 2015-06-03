@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 
-public class RegisterActivity extends Activity implements OnClickListener, OnCheckedChangeListener{
+public class RegisterActivity extends BaseActivity implements OnClickListener, OnCheckedChangeListener{
 	public final static int RESULT_REGISTER_SUCCESS = 2000;
 	public final static int RESULT_REGISTER_ERROR = 2001;
 	public final static int NONE_INVITATIONCODE = 10000;

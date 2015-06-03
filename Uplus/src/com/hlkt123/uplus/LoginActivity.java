@@ -21,7 +21,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LoginActivity extends Activity implements OnClickListener{
+public class LoginActivity extends BaseActivity implements OnClickListener{
 	public final static int LOGIN_MAIN= 0x01;
 	public final static int RESULT_LOGIN_SUCCESS = 1000;
 	public final static int RESULT_NO_USERNAME = 1001;

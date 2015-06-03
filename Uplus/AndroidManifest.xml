@@ -68,7 +68,9 @@
         <activity
             android:name=".OrderActivity" >
         </activity>
-
+        <activity
+            android:name=".MyOrderActivity" >
+        </activity>
     </application>
 
 </manifest>

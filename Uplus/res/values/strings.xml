@@ -33,4 +33,9 @@
     <string name="order_reduce">优惠券</string>
     <string name="order_cancel">取消订单</string>
     <string name="order_pay">付款</string>
+    <string name="order_all">全部</string>
+    <string name="order_2pay">待付款</string>
+    <string name="order_2confirm">待确认</string>
+    <string name="order_finish">已完成</string>
+    <string name="my_order">我的订单</string>
 </resources>

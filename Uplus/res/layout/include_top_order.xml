@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/id_tab_all"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <TextView 
+            android:id="@+id/id_tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_all"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_tab_2pay"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <TextView 
+            android:id="@+id/id_tv_2pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_2pay"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_tab_2confirm"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <TextView 
+            android:id="@+id/id_tv_2confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_2confirm"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_tab_finish"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <TextView 
+            android:id="@+id/id_tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_finish"
+            />
+    </LinearLayout>
+</LinearLayout>

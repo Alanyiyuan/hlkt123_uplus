@@ -20,7 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class FindBackPswActivity extends Activity implements OnClickListener{
+public class FindBackPswActivity extends BaseActivity implements OnClickListener{
 
 	public final static int RESULT_FINDBACKPSW_SUCCESS = 3000;
 	public final static int RESULT_FINDBACKPSW_ERROR = 3001;

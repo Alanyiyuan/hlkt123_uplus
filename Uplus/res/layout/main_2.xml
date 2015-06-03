@@ -8,7 +8,7 @@
     <Button
         android:id="@+id/register"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="151dp"
@@ -16,24 +16,34 @@
         android:background="#FF6600"
          />
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/register"
-        android:layout_below="@+id/register"
-        android:layout_marginTop="19dp"
-        android:background="#66CCCC"
-        android:text="@string/login" />
-    
      <Button
-        android:id="@+id/order"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/register"
-        android:layout_centerVertical="true"
-        android:background="#66CCCC"
-        android:text="@string/order" />
-    
+         android:id="@+id/order"
+         android:layout_width="150dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/login"
+         android:layout_below="@+id/login"
+         android:layout_marginTop="13dp"
+         android:background="#66CCCC"
+         android:text="@string/order" />
+
+     <Button
+         android:id="@+id/login"
+         android:layout_width="150dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/register"
+         android:layout_below="@+id/register"
+         android:layout_marginTop="13dp"
+         android:background="#66CCCC"
+         android:text="@string/login" />
+
+     <Button
+         android:id="@+id/my_order"
+         android:layout_width="150dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/order"
+         android:layout_below="@+id/order"
+         android:layout_marginTop="12dp"
+         android:background="#66CCCC"
+         android:text="@string/my_order" />
 
 </RelativeLayout>
