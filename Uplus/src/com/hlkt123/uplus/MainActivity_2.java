@@ -13,7 +13,8 @@ public class MainActivity_2 extends Activity implements OnClickListener {
 	private Button register_btn;
 	private Button login_btn;
 	private Button order;
-	private Button myOrder;
+//	private Button myOrder;
+	private Button btn_my;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,14 @@ public class MainActivity_2 extends Activity implements OnClickListener {
         register_btn = (Button) findViewById(R.id.register);
         login_btn = (Button)findViewById(R.id.login);
         order = (Button) findViewById(R.id.order);
-        myOrder = (Button) findViewById(R.id.my_order);
+        btn_my = (Button) findViewById(R.id.my);
+//        myOrder = (Button) findViewById(R.id.my_order);
         
         register_btn.setOnClickListener(this);
         login_btn.setOnClickListener(this);
         order.setOnClickListener(this);
-        myOrder.setOnClickListener(this);
+        btn_my.setOnClickListener(this);
+//        myOrder.setOnClickListener(this);
     }
 
 
@@ -58,8 +61,8 @@ public class MainActivity_2 extends Activity implements OnClickListener {
 			Intent intent3 = new Intent(MainActivity_2.this, OrderActivity.class);
 			startActivity(intent3);
 			break;
-		case R.id.my_order:
-			Intent intent4 = new Intent(MainActivity_2.this, MyOrderActivity.class);
+		case R.id.my:
+			Intent intent4 = new Intent(MainActivity_2.this, MyActivity.class);
 			startActivity(intent4);
 			break;
 		default:

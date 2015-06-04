@@ -36,7 +36,7 @@
          android:background="#66CCCC"
          android:text="@string/login" />
 
-     <Button
+     <!-- <Button
          android:id="@+id/my_order"
          android:layout_width="150dp"
          android:layout_height="50dp"
@@ -44,6 +44,16 @@
          android:layout_below="@+id/order"
          android:layout_marginTop="12dp"
          android:background="#66CCCC"
-         android:text="@string/my_order" />
+         android:text="@string/my_order" /> -->
+
+     <Button
+         android:id="@+id/my"
+         android:layout_width="150dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/order"
+         android:layout_below="@+id/order"
+         android:layout_marginTop="10dp"
+         android:background="#66CCCC"
+         android:text="@string/my" />
 
 </RelativeLayout>

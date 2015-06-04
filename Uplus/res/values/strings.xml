@@ -38,4 +38,16 @@
     <string name="order_2confirm">待确认</string>
     <string name="order_finish">已完成</string>
     <string name="my_order">我的订单</string>
+    <string name="my_detail">账户信息</string>
+    <string name="suggest">意见反馈</string>
+    <string name="call_us">联系我们</string>
+    <string name="my">我的</string>
+    <string name="myIcon">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="name">真实姓名</string>
+    <string name="gender">性别</string>
+    <string name="school">学校</string>
+    <string name="grade">年级</string>
+    <string name="className">班级</string>
+    <string name="address">家庭住址</string>
 </resources>
